@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/itsalexi/Memory-Card/static/css/main.f4fa2371.css",
+    "main.js": "/itsalexi/Memory-Card/static/js/main.4fc894f7.js",
+    "index.html": "/itsalexi/Memory-Card/index.html",
+    "main.f4fa2371.css.map": "/itsalexi/Memory-Card/static/css/main.f4fa2371.css.map",
+    "main.4fc894f7.js.map": "/itsalexi/Memory-Card/static/js/main.4fc894f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4fa2371.css",
+    "static/js/main.4fc894f7.js"
+  ]
+}
