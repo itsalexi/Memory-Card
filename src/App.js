@@ -13,7 +13,9 @@ import cards from './cards';
 function App() {
     return (
         <div className="App">
-            <GameBoard cards={cards} />
+            <div className="container">
+                <GameBoard cards={cards} />
+            </div>
         </div>
     );
 }
