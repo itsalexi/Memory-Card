@@ -8,20 +8,23 @@ const GameBoard = (props) => {
     const [flip, setFlip] = useState('');
 
     const shuffle = () => {
-        let shuffled = cards.sort(() => Math.random() - 0.5);
+        let shuffleThis = [...cards];
+        let shuffled = shuffleThis.sort(() => Math.random() - 0.5);
         setCards(shuffled);
+        console.log('shuffling');
     };
 
     const shuffleBoard = () => {
         setFlip('');
-        shuffle();
         setTimeout(() => {
-            setFlip('flip');
-        }, 1000);
+            shuffle();
+            setTimeout(() => {
+                setFlip('flip');
+            }, 300);
+        }, 300);
     };
 
     useEffect(() => {
-        shuffle();
         setTimeout(() => {
             setFlip('flip');
         }, 500);
@@ -31,7 +34,10 @@ const GameBoard = (props) => {
         <div className="cards">
             {cards.map((card) => {
                 return (
-                    <div key={card.id} className={`${flip ? flip : ''} card`}>
+                    <div
+                        key={card.id}
+                        className={`${flip ? `${flip} card` : 'card'}`}
+                    >
                         <div className="view front-view"></div>
                         <Card img={card.img} id={card.id} />
                     </div>
