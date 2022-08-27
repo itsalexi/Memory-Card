@@ -1,36 +1,3 @@
-/* .card {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-}
-
-.card-container {
-    perspective: 800px;
-    transform-style: preserve-3d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    padding: 1em;
-    border-radius: 1em;
-    height: 8em;
-}
-
-.card-container .back {
-    transform: rotateY(-180deg);
-}
-
-.card-container:hover .back {
-    transform: rotateY(0);
-} */
-
 .card,
 .view {
     display: flex;
@@ -76,7 +43,8 @@
     width: 19px;
 }
 .card .back-view img {
-    max-width: 80px;
+    width: 70%;
+    height: 70%;
 }
 .card .back-view {
     transform: rotateY(-180deg);

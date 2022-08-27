@@ -4,6 +4,7 @@ import '../styles/GameBoard.css';
 import { useEffect, useState } from 'react';
 
 const GameBoard = (props) => {
+    const { lost, checkCard } = props;
     const [cards, setCards] = useState(props.cards);
     const [flip, setFlip] = useState('');
 
@@ -30,20 +31,26 @@ const GameBoard = (props) => {
         }, 500);
     }, []);
 
+    const checkAndShuffle = (card) => {
+        if (!lost) {
+            if (checkCard(card)) {
+                shuffleBoard();
+            }
+        }
+    };
+
     return (
         <div className="cards">
             {cards.map((card) => {
                 return (
-                    <div
+                    <Card
+                        checkCard={checkAndShuffle}
                         key={card.id}
-                        className={`${flip ? `${flip} card` : 'card'}`}
-                    >
-                        <div className="view front-view"></div>
-                        <Card img={card.img} id={card.id} />
-                    </div>
+                        card={card}
+                        flip={flip}
+                    />
                 );
             })}
-            <button onClick={shuffleBoard}></button>
         </div>
     );
 };
