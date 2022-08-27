@@ -1,4 +1,5 @@
 import Card from './Card';
+import '../styles/GameBoard.css';
 
 const GameBoard = (props) => {
     const { cards } = props;
