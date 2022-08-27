@@ -32,10 +32,10 @@
     height: 100%;
     position: absolute;
     border-radius: 7px;
-    background: #fff;
+    background: #cffafe;
     pointer-events: none;
     backface-visibility: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s linear;
 }
 

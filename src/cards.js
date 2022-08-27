@@ -1,5 +1,3 @@
-// Remove the first . when deploying to make images work
-
 const cards = [
     {
         id: '1',

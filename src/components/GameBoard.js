@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import Card from './Card';
-import '../styles/GameBoard.css';
 import { useEffect, useState } from 'react';
 
 const GameBoard = (props) => {

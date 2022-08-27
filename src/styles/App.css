@@ -5,6 +5,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.game-title {
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
 .score {
     background: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
